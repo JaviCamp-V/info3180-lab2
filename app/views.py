@@ -63,7 +63,7 @@ def profile():
     now = datetime.datetime.now() # today's date
     date_joined = datetime.date(2019, 2, 7) # a specific date
     ## Format the date to return only month and year date
-    v= "Joined " + date_joined.strftime("%B, %Y")
+    v= "Joined " + now.strftime("%B, %Y")
     bio="Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quod delectus error, quam assumenda mollitia doloribus voluptas aut dolor eligendi magnam praesentium ducimus repellendus adipisci voluptate placeat sunt ipsam facere"
     return render_template("profile.html",name="Javian Campbell",username="kxng_viagra",address="St.Thomas,Jamaica",date_joined=v,bio=bio,pcount=8,flcount=100,fcount=250)
 
